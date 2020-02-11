@@ -21,11 +21,4 @@ Image_t *newImage(int width, int height, int channels) {
 }
 
 
-float getPixel(Image_t *img, int x, int y, int c) {
-    float *data = getData(img);
-    int channels = getChannels(img);
-    int pitch = getPitch(img);
-
-    return data[y * pitch + x * channels + c];
-}
 

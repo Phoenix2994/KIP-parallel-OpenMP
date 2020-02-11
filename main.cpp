@@ -35,7 +35,6 @@ int main(int argc, char *argv[]) {
         int widthOffset = (imageWidth / thread_num);
         int sliceWidth = (tid == thread_num - 1) ? (imageWidth / thread_num) + (imageWidth % thread_num) : (imageWidth /
                                                                                                             thread_num);
-
         for (int i = 0; i < imageHeight; i++) {
             for (int j = 0; j < sliceWidth; j++) {
                 for (int c = 0; c < imageChannels; c++) {
@@ -65,7 +64,6 @@ int main(int argc, char *argv[]) {
         }
 
     };
-
 
     auto end = std::chrono::system_clock::now();
 

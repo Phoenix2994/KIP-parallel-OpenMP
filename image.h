@@ -26,7 +26,6 @@ Image_t *newImage(int width, int height, int channels, float *data);
 
 Image_t *newImage(int width, int height, int channels);
 
-float getPixel(Image_t *img, int x, int y, int c);
 
 
 #endif /* IMAGE_H_ */
